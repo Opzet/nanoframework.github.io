@@ -32,7 +32,18 @@ There are 2 I2C bus available:
 
 ## SPI
 
-There are 2 SPI possible configurations:
+There are 2 SPI possible configurations (HSPI - SPI2 | VSPI - SPI3):
+
+* Error in Example https://github.com/nanoframework/Home/issues/560
+| GPIO Number	| SPI2-HSPI	| SPI3 - VSPI | NanoFramework Doc *ERROR | ADXL 345 | 
+| --- | --- | --- |  --- | --- |
+| CS0* | 15 | 5 | 5 | CS |
+| SCLK | 14 |	18 | 19 | CLK |
+| MOSI | 13 |	23 | 23 | SDA |
+| MISO | 13 |	23 | 25 | SDO |
+
+
+Pin Name  
 
 | SPI# | MOSI | MISO | Clock |
 | --- | --- | --- | --- |
